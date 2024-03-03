@@ -7,3 +7,9 @@
 Вывести значение переменной admin в консоль.
 */
 
+const NAME = "Elena";
+const ADMIN = NAME;
+
+console.log(ADMIN);
+
+// Видимо, как-то не так поняла задание...(
