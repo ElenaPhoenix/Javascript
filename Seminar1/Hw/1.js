@@ -13,9 +13,7 @@
 Уточнение: пользователь всегда вводит корректное число.
 */
 
-const TEMPERATURECELSIUS = prompt("Введите температуру в градусах Цельсия, пожалуйста.", "");
-const TEMPERATUREFAHRENHEIT = (9 / 5) * TEMPERATURECELSIUS + 32;
-// alert("Цельсий: " + TEMPERATURECELSIUS + " Фаренгейт: " + TEMPERATUREFAHRENHEIT);
-alert(`Цельсий: ${TEMPERATURECELSIUS}, Фаренгейт: ${TEMPERATUREFAHRENHEIT}`);
-
-// Исходя из Ваших рекомендаций и рекомендаций лектора, назвала константы понятным именем и в верхнем регистре, чтобы в дальнейшем по коду было сразу видно, где константы.
+const temperatureCelsius = Number.parseFloat(prompt("Введите температуру в градусах Цельсия, пожалуйста.", "")); // Сразу преобразуем данные от пользователя в число
+const temperatureFahrenheit = Math.round((9 / 5) * temperatureCelsius + 32);
+// alert("Цельсий: " + temperatureCelsius + " Фаренгейт: " + temperatureFahrenheit);
+alert(`Цельсий: ${temperatureCelsius}, Фаренгейт: ${temperatureFahrenheit}`);
