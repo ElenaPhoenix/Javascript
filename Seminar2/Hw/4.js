@@ -23,12 +23,12 @@
 Подсказка: Возможно, вам понадобится округление чисел и оператор %.
 */
 
-const someNumber = +prompt("Введите целое число");
-if (Number.isNaN(someNumber) || someNumber % 1 !== 0) {
+const someNumber = Number.isInteger(prompt("Введите целое число")); // Number.isInteger() проверяет на то что у нас число и что оно целое.
+if (someNumber % 1 !== 0) {
     alert("Введите целое число")
 } else {
-    let units = someNumber % 10;
-    let tens = Math.trunc(someNumber / 10) % 10;
-    let hundreds = Math.trunc(someNumber / 100) % 10;
+    const units = someNumber % 10;
+    const tens = Math.trunc(someNumber / 10) % 10;
+    const hundreds = Math.trunc(someNumber / 100) % 10;
     alert(`В числе ${someNumber} количество сотен: ${hundreds}, десятков: ${tens}, единиц: ${units}`);
 }

@@ -14,16 +14,14 @@
 число 32.
 */
 
-const dayNumber = +prompt("Введите целое число в интервале [1, 32)");
+const dayNumber = Number.isInteger(prompt("Введите целое число в интервале [1, 32)")); // Number.isInteger() проверяет на то что у нас число и что оно целое.
 if (dayNumber % 1 == 0 && dayNumber >= 1 && dayNumber < 32) {
-    if (dayNumber >= 1 && dayNumber < 11) {
-    alert(`Число ${dayNumber} попадает в первую декаду месяца.`);
+    if (dayNumber < 11) {
+        alert(`Число ${dayNumber} попадает в первую декаду месяца.`);
     } else if (dayNumber > 10 && dayNumber < 21) {
-    alert(`Число ${dayNumber} попадает во вторую декаду месяца.`);
-    } else if (dayNumber > 20 && dayNumber < 31) {
-    alert(`Число ${dayNumber} попадает в третью декаду месяца.`);
-    } else if (dayNumber > 30 && dayNumber <= 32) {
-    alert(`Число ${dayNumber} попадает в четвертую декаду месяца.`);
+        alert(`Число ${dayNumber} попадает во вторую декаду месяца.`);
+    } else if (dayNumber > 20) {
+        alert(`Число ${dayNumber} попадает в третью декаду месяца.`);
     }
 } else {
     alert("Неверное значение");
