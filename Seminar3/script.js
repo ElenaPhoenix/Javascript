@@ -12,7 +12,7 @@ printHello("Kalys", "Bakyt", 27);
 function square(number) {
     return number ** 2;
 }
-const result = square(+prompt(`Введите число`));
+const result = square(+prompt("Введите число"));
 console.log(result);
 
 // 1.3. Создайте функцию, которая принимает число. Функция должна вывести в консоль '+++', если число положительное, либо '---', если число было отрицательное. В случае, если было передано не число, либо ноль, функция ничего не должна выводить.
@@ -78,15 +78,15 @@ console.log(findMin(8,-5));
 
 function getweekday(number) {
     switch(number) {
-        case 1: return 'Понедельник';
-        case 2: return 'Вторник';
-        case 3: return 'Среда';
-        case 4: return 'Четверг';
-        case 5: return 'Пятница';
-        case 6: return 'Суббота';
-        case 7: return 'Воскресенье';
+        case 1: return "Понедельник";
+        case 2: return "Вторник";
+        case 3: return "Среда";
+        case 4: return "Четверг";
+        case 5: return "Пятница";
+        case 6: return "Суббота";
+        case 7: return "Воскресенье";
         default:
-    return 'Некорректный день недели';
+    return "Некорректный день недели";
     }
 }
 console.log(getweekday(4));
@@ -128,4 +128,4 @@ function sayHello(firstName) {
         return `Добрый вечер, ${firstName}`;
     }
 }
-sayHello('Elena');
+sayHello("Elena");
