@@ -40,6 +40,13 @@ function subtractionOfNumbers(number1, number2) { // Сделала соглас
     }
 }
 
+// function subtractionOfNumbers(number1, number2) { // Компактный вариант предыдущей функции
+//     if (number1 > number2) {
+//         return number1 - number2;
+//     }
+//     return number2 - number1;
+// }
+
 function multiplicationOfNumbers(number1, number2) {
     return console.log(number1 * number2);
 }

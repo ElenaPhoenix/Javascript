@@ -14,8 +14,8 @@ salaryWithoutTax(salary);
 
 function salaryWithoutTax(number) {
     if (!Number.isFinite(number) || number <= 0) {
-        return console.log("Значение задано неверно");
+        // return console.log("Значение задано неверно");
     } else {
-        console.log(`Размер заработной платы за вычетом налогов равен ${number * 0,87}.`);
+        alert(`Размер заработной платы за вычетом налогов равен ${Number.parseInt(number * 0.87)}.`);
     }
 }
