@@ -3,9 +3,9 @@
 
 const elements1 = [1, 2, 3];
 
-console.log(elements[0]);
-console.log(elements[1]);
-console.log(elements[2]);
+console.log(elements1[0]);
+console.log(elements1[1]);
+console.log(elements1[2]);
 
 // 1.2. Создайте массив с произвольными элементами. Выведите на экран количество элементов в этом массиве.
 
