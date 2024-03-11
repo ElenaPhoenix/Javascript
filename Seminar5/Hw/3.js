@@ -7,22 +7,22 @@
 Если сложно работать с методами массива, то можно сделать и обычным циклом.
 */
 
-// const products = [
-//   {
-//     id: 3,
-//     price: 200,
-//   },
-//   {
-//     id: 4,
-//     price: 900,
-//   },
-//   {
-//     id: 1,
-//     price: 1000,
-//   },
-// ];
+const products = [
+    {
+    id: 3,
+    price: 200,
+    },
+    {
+    id: 4,
+    price: 900,
+    },
+    {
+    id: 1,
+    price: 1000,
+    },
+];
 
-// const newPrice = 0.85;
+const netPrice = 0.85;
 
-// products.forEach((pr) => (pr.price = pr.price * newPrice));
-// console.log(products);
+products.forEach((elm) => (elm.price = elm.price * netPrice));
+console.log(products);

@@ -9,41 +9,29 @@
 Если сложно работать с методами массива, то можно сделать и обычным циклом.
 */
 
-// const products = [
-//   {
-//     id: 3,
-//     price: 127,
-//     photos: ["1.jpg", "2.jpg"],
-//   },
-//   {
-//     id: 5,
-//     price: 499,
-//     photos: [],
-//   },
-//   {
-//     id: 10,
-//     price: 26,
-//     photos: ["3.jpg"],
-//   },
-//   {
-//     id: 8,
-//     price: 78,
-//   },
-// ];
+const products = [
+    {
+    id: 3,
+    price: 127,
+    photos: ["1.jpg", "2.jpg"],
+    },
+    {
+    id: 5,
+    price: 499,
+    photos: [],
+    },
+    {
+    id: 10,
+    price: 26,
+    photos: ["3.jpg"],
+    },
+    {
+    id: 8,
+    price: 78,
+    },
+];
 
-// const productsFiltered = products.filter((el) => {
-//   if (el.photos && el.photos.length > 0) {
-//     console.log(el.id);
-//   }
-// });
+const productsFiltered = products.filter(el => el.photos && el.photos.length > 0);
+console.log(productsFiltered);
 
-// const arrayOfKeys = Object.keys(products);
-
-// const keysSortedByPrice = arrayOfKeys.sort((a,b) => { // ['2', '3', '0', '1']
-//   return products[a].price - products[b].price;
-// });
-
-// // не получается почему-то сортировка((
-// const productsSortedByPrice = [];
-// keysSortedByPrice.forEach(key => productsSortedByPrice[key] = products[key]);
-// console.log(productsSortedByPrice);
+console.log(products.sort((a, b) => a.price - b.price));
