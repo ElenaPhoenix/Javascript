@@ -21,7 +21,7 @@ for (let i = 0; i < 5; i++) {
 }
 console.log("Сумма элементов массива: " + array.length);
 
-const minValue = Math.min.apply(null,array);
+const minValue = Math.min(...array);
 console.log("Минимальное значение в массиве: " + minValue);
 
 const arrayNew = []

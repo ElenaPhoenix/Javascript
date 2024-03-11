@@ -12,4 +12,4 @@
 
 В html-файле базовая структура задается через "!"
 
-
+Курс по JS: https://disk.yandex.ru/d/dNcHjZs3c96ypw
