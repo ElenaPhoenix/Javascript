@@ -1,0 +1,10 @@
+.title {
+    color: rebeccapurple;
+}
+
+.title + p {
+    color: rgb(51, 153, 58);
+}
+.btn {
+    border: 1px solid red;
+}
