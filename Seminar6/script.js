@@ -69,8 +69,12 @@ btnEl.innerHTML = "Нажми на меня";
 btnEl.classList.add("btn");
 btnEl.style.color = "blue"; // - здесь тоже можно стили создавать, но не приветствуется, стили прописываются в .css
 
-btnEl.onclick = function(e) { // - не имея доступа к самому элементу, функции присваиваем элемент, который является нашей кнопкой
-    console.log(e.target); // - .target -свойство, которое хранит тот элемент, на который кликнули
-    e.target.innerHTML = "Текст отправлен";
-}
+// btnEl.onclick = function(e) { // - не имея доступа к самому элементу, функции присваиваем элемент, который является нашей кнопкой
+//     console.log(e.target); // - .target -свойство, которое хранит тот элемент, на который кликнули
+//     e.target.innerHTML = "Текст отправлен";
+// }
 
+divEl.appendChild(btnEl);
+btnEl.onclick = function (e) {
+    btnEl.innerHTML = "Текст отправлен";
+}
