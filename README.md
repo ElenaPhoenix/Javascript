@@ -19,4 +19,6 @@ Java Script - объектный язык, который поддерживае
 **Полезные ссылки**
 https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 
+https://learn.javascript.ru/
+
 https://learn.javascript.ru/templates - регулярные выражения

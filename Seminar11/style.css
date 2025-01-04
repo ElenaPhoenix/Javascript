@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.play{
+    background-image: url('');
+    height: 100px;
+    background-repeat: no-repeat;
+}
+.pause{
+    background-image: url('');
+    height: 100px;
+    background-repeat: no-repeat;
+}
